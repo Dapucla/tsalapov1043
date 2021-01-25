@@ -5,7 +5,7 @@ export interface MyStudent {
   patronymic: string;
   phone: string;
   email: string;
-  group: number;
+  course: number;
   edit: boolean;
 }
 
