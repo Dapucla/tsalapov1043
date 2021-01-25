@@ -37,6 +37,7 @@
                 <th scope="col">Возраст</th>
                 <th scope="col"></th>
                 <th scope="col"></th>
+                <th scope='col'></th>
             </tr>
         </thead>
         <tbody class='text-white'>
@@ -76,7 +77,15 @@
                 <td *ngIf="student.edit">
                     <input style='width:120%' type="text" [ngModel]="student.date | date: 'dd/mm/yyyy'" (ngModelChange)='student.date=$event' />
                 </td>
-
+                <td *ngIf="student.edit">
+                    Курс
+                    <select class="custom-select" formControlName="course">
+                  <option [ngValue]="1">Веб-разработка</option>
+                  <option [ngValue]="2">САПР</option>
+                  <option [ngValue]="3">Машиностроение</option>
+                  <option [ngValue]="4">Дизайн интерфейсов</option>
+                </select>
+                </td>
                 <td>
                     <button class="btn btn-primary btn-sm" (click)="editThisStudent(student)">
           Изменить
