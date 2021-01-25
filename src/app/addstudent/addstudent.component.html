@@ -4,19 +4,19 @@
             <h5>Добавить студента</h5>
         </div>
         <div class="col-4">
-            <input type="text" class="form-control" placeholder="Имя" formControlName="name" />
+            <input type="text" name='name' class="form-control" placeholder="Имя" formControlName="name" />
         </div>
         <div class="col-4">
-            <input type="text" class="form-control" placeholder="Фамилия" formControlName="surname" />
+            <input type="text" name='surname' class="form-control" placeholder="Фамилия" formControlName="surname" />
         </div>
         <div class="col-4">
-            <input type="text" class="form-control" placeholder="Отчество" formControlName="patronymic" />
+            <input type="text" name='patronymic' class="form-control" placeholder="Отчество (не обязательно)" formControlName="patronymic" />
         </div>
         <div class="col-4 mt-2">
             <input [textMask]="{ mask: mask }" type="text" class="form-control" placeholder="Телефон" formControlName="phone" />
         </div>
         <div class="col-4 mt-2">
-            <input type="text" class="form-control" placeholder="Почта" formControlName="email" />
+            <input type="text" name='email' class="form-control" placeholder="Почта" formControlName="email" />
         </div>
         <div class="col-4 mt-2">
             <input type="date" class="form-control" placeholder="Дата рождения" formControlName="date" />
@@ -36,7 +36,7 @@
             <button class="btn btn-outline-primary btn-sm" [disabled]="addForm.invalid" (click)="addStudent()">
       Добавить
     </button>
-            <div *ngIf="addForm.invalid" class="alert alert-info mt-2">
+            <div *ngIf="addForm.invalid" class="alert alert-primary mt-2">
                 Для добавления студента заполните корректно все поля
             </div>
         </div>

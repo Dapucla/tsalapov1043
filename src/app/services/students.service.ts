@@ -8,6 +8,6 @@ import { BaseHttp } from './basehttp.service';
 export class StudentsDataBase extends BaseHttp {
 
   constructor(public http: HttpClient) {
-    super(http, "students")
+    super(http, "students");
   }
 }

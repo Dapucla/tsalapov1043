@@ -10,17 +10,17 @@
                 <select formControlName='sortType' class='custom-select' (click)="currentInstrument()">
             <option [ngValue]='"higherId"'>возрастанию id</option>
             <option [ngValue]='"lowerId"'>убыванию id</option>
-            <option [ngValue]='"higherAge"'>возрастанию возраста</option>
-            <option [ngValue]='"lowerAge"'>убыванию возраста</option>
+            <option [ngValue]='"lowerSurname"'>убыванию фамилии</option>
+            <option [ngValue]='"higherSurname"'>возрастанию фамилии</option>
           </select>
             </form>
         </div>
         <div class='col-6' *ngIf="!instruments">
             <div>
-                <span>Фильтр по имени или фамилии</span>
+                <span>Фильтр по фамилии или группе</span>
             </div>
             <div>
-                <input type="text" class='form-control' placeholder="Имя Фамилия" [(ngModel)]='searchSrt'>
+                <input type="text" class='form-control' placeholder="Фамилия / Группа" [(ngModel)]='searchSrt'>
             </div>
         </div>
     </div>
@@ -53,26 +53,29 @@
                 <td *ngIf="!student.edit">{{ student.phone }}</td>
                 <td *ngIf="!student.edit">{{ student.email }}</td>
                 <td *ngIf="!student.edit">{{ student.group }}</td>
+                <td *ngIf="!student.edit">{{ getAge(student.date) }}</td>
 
                 <td *ngIf="student.edit">
-                    <input type="text" [(ngModel)]="student.name" />
+                    <input style='width:120%' type="text" [(ngModel)]="student.name" />
                 </td>
                 <td *ngIf="student.edit">
-                    <input type="text" [(ngModel)]="student.surname" />
+                    <input style='width:120%' type="text" [(ngModel)]="student.surname" />
                 </td>
                 <td *ngIf="student.edit">
-                    <input type="text" [(ngModel)]="student.patronymic" />
+                    <input style='width:120%' type="text" [(ngModel)]="student.patronymic" />
                 </td>
                 <td *ngIf="student.edit">
-                    <input type="text" [(ngModel)]="student.phone" />
+                    <input style='width:120%' type="text" [(ngModel)]="student.phone" />
                 </td>
                 <td *ngIf="student.edit">
-                    <input type="text" [(ngModel)]="student.email" />
+                    <input style='width:120%' type="text" [(ngModel)]="student.email" />
                 </td>
                 <td *ngIf="student.edit">
-                    <input type="text" [(ngModel)]="student.date" />
+                    <input style='width:120%' type="text" [(ngModel)]="student.group" />
                 </td>
-                <td>{{ getAge(student.date) }}</td>
+                <td *ngIf="student.edit">
+                    <input style='width:120%' type="text" [ngModel]="student.date | date: 'dd/mm/yyyy'" (ngModelChange)='student.date=$event' />
+                </td>
 
                 <td>
                     <button class="btn btn-primary btn-sm" (click)="editThisStudent(student)">

@@ -10,10 +10,9 @@ import { StudentsDataBase } from '../services/students.service';
   styleUrls: ['./course.component.scss']
 })
 export class CourseComponent implements OnInit {
-
   course: number = 1;
   students: MyStudent[] = [];
-  sortType = 'higherId';
+  sortType = 'lowerSurname';
   instruments: boolean = false;
   searchSrt: string = '';
 
@@ -36,20 +35,6 @@ export class CourseComponent implements OnInit {
   currentInstrument() {
     let sortFor ;
     this.sortType = this.sortForm.value.sortType
-    switch (this.sortType) {
-      case 'higherId':
-        sortFor = 'по возрастанию id';
-        break;
-      case 'lowerId':
-        sortFor = 'по убыванию id';
-        break;
-      case 'higherAge':
-        sortFor = 'по возрастанию возраста';
-        break;
-      case 'lowerAge':
-        sortFor = 'по убыванию возраста';
-        break;
-    }
     return sortFor;
   }
 

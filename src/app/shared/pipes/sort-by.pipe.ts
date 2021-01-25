@@ -5,7 +5,7 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class SortByPipe implements PipeTransform {
 
-  transform(students: {id: number; date: string}[], sortType: string): any[] {
+  transform(students: {id: number; group: string; surname: string}[], sortType: string): any[] {
     let student = students;
     switch(sortType) {
       case 'higherId':
@@ -14,25 +14,13 @@ export class SortByPipe implements PipeTransform {
       case 'lowerId':
         student = student.sort((a,b)=>(a.id<b.id ? 1: -1));
         break;
-      case 'higherAge':
-        student = student.sort((a,b)=>
-          this.getAge(a.date) < this.getAge(b.date) ? 1 : -1
-        );
+      case 'higherSurname':
+        student = student.sort((a,b)=>b.surname.localeCompare(a.surname))
         break;
-      case 'lowerAge':
-        student = student.sort((a,b)=>
-        this.getAge(a.date) > this.getAge(b.date) ? 1 : -1
-      );
-      break;
+      case 'lowerSurname':
+        student = student.sort((a,b)=>a.surname.localeCompare(b.surname))
+        break;
     }
     return students;
-  }
-
-  private getAge(date:string) {
-    let a = new Date(date);
-    let b = new Date();
-    let date_diff = b.getTime() - a.getTime();
-    let age = Math.floor(date_diff/1000/60/60/24/365);
-    return age;
   }
 }
