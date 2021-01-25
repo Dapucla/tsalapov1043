@@ -13,6 +13,7 @@ import { CoursePipe } from './shared/pipes/course.pipe';
 import { SortByPipe } from './shared/pipes/sort-by.pipe';
 import { StudentsfilterPipe } from './shared/pipes/studentsfilter.pipe';
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
+import { FooterComponent } from './shared/components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +24,8 @@ import { FormsModule, ReactiveFormsModule } from '@angular/forms';
     InformationComponent,
     CoursePipe,
     SortByPipe,
-    StudentsfilterPipe
+    StudentsfilterPipe,
+    FooterComponent
   ],
   imports: [
     BrowserModule,
