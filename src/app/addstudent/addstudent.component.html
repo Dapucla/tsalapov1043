@@ -1,1 +1,44 @@
-<p>addstudent works!</p>
+<form [formGroup]="addForm">
+    <div class="row mb-3">
+        <div class="col-12 mb-3 mt-3">
+            <h5>Добавить студента</h5>
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" placeholder="Имя" formControlName="name" />
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" placeholder="Фамилия" formControlName="surname" />
+        </div>
+        <div class="col-4">
+            <input type="text" class="form-control" placeholder="Отчество" formControlName="patronymic" />
+        </div>
+        <div class="col-4 mt-2">
+            <input [textMask]="{ mask: mask }" type="text" class="form-control" placeholder="Телефон" formControlName="phone" />
+        </div>
+        <div class="col-4 mt-2">
+            <input type="text" class="form-control" placeholder="Почта" formControlName="email" />
+        </div>
+        <div class="col-4 mt-2">
+            <input type="date" class="form-control" placeholder="Дата рождения" formControlName="date" />
+        </div>
+        <div class="col-6 mt-2">
+            <select class="custom-select" formControlName="course">
+          <option [ngValue]="1">Веб-разработка</option>
+          <option [ngValue]="2">САПР</option>
+          <option [ngValue]="3">Машиностроение</option>
+          <option [ngValue]="4">Дизайн интерфейсов</option>
+        </select>
+        </div>
+        <div class="col-6 mt-2">
+            <input type="text" class="form-control" placeholder="Группа" formControlName="group" />
+        </div>
+        <div class="col-12 mt-2">
+            <button class="btn btn-outline-primary btn-sm" [disabled]="addForm.invalid" (click)="addStudent()">
+      Добавить
+    </button>
+            <div *ngIf="addForm.invalid" class="alert alert-info mt-2">
+                Для добавления студента заполните корректно все поля
+            </div>
+        </div>
+    </div>
+</form>

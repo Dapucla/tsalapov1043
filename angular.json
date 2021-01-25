@@ -3,7 +3,7 @@
     "version": 1,
     "newProjectRoot": "projects",
     "projects": {
-        "webexam": {
+        "tsalapov1043": {
             "projectType": "application",
             "schematics": {
                 "@schematics/angular:component": {
@@ -20,7 +20,7 @@
                 "build": {
                     "builder": "@angular-devkit/build-angular:browser",
                     "options": {
-                        "outputPath": "dist/webexam",
+                        "outputPath": "dist/tsalapov1043",
                         "index": "src/index.html",
                         "main": "src/main.ts",
                         "polyfills": "src/polyfills.ts",
@@ -66,18 +66,18 @@
                 "serve": {
                     "builder": "@angular-devkit/build-angular:dev-server",
                     "options": {
-                        "browserTarget": "webexam:build"
+                        "browserTarget": "tsalapov1043:build"
                     },
                     "configurations": {
                         "production": {
-                            "browserTarget": "webexam:build:production"
+                            "browserTarget": "tsalapov1043:build:production"
                         }
                     }
                 },
                 "extract-i18n": {
                     "builder": "@angular-devkit/build-angular:extract-i18n",
                     "options": {
-                        "browserTarget": "webexam:build"
+                        "browserTarget": "tsalapov1043:build"
                     }
                 },
                 "test": {
@@ -114,16 +114,16 @@
                     "builder": "@angular-devkit/build-angular:protractor",
                     "options": {
                         "protractorConfig": "e2e/protractor.conf.js",
-                        "devServerTarget": "webexam:serve"
+                        "devServerTarget": "tsalapov1043:serve"
                     },
                     "configurations": {
                         "production": {
-                            "devServerTarget": "webexam:serve:production"
+                            "devServerTarget": "tsalapov1043:serve:production"
                         }
                     }
                 }
             }
         }
     },
-    "defaultProject": "webexam"
+    "defaultProject": "tsalapov1043"
 }

@@ -1,47 +1,111 @@
 {
-    "students": [{
-            "id": 1,
-            "name": "Александр",
-            "surname": "Цалапов",
-            "patronymic": "Михайлович",
-            "phone": "+7(800)555-3535",
-            "email": "qwerty@mail.ru",
-            "date": "1998-10-21T13:28:06.419Z",
-            "course": 1,
-            "edit": false
-        },
-        {
-            "id": 2,
-            "name": "Александр",
-            "surname": "Цалапов",
-            "patronymic": "Михайлович",
-            "phone": "+7(800)555-3535",
-            "email": "qwerty@mail.ru",
-            "date": "1998-10-21T13:28:06.419Z",
-            "course": 2,
-            "edit": false
-        },
-        {
-            "id": 3,
-            "name": "Александр",
-            "surname": "Цалапов",
-            "patronymic": "Михайлович",
-            "phone": "+7(800)555-3535",
-            "email": "qwerty@mail.ru",
-            "date": "1998-10-21T13:28:06.419Z",
-            "course": 3,
-            "edit": false
-        },
-        {
-            "id": 4,
-            "name": "Александр",
-            "surname": "Цалапов",
-            "patronymic": "Михайлович",
-            "phone": "+7(800)555-3535",
-            "email": "qwerty@mail.ru",
-            "date": "1998-10-21T13:28:06.419Z",
-            "course": 4,
-            "edit": false
-        }
-    ]
+  "students": [
+    {
+      "id": 1,
+      "name": "Александр",
+      "surname": "Цалапов",
+      "patronymic": "Михайлович",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1998-10-21T13:28:06.419Z",
+      "group": "191-322",
+      "course": 1,
+      "edit": false
+    },
+    {
+      "id": 2,
+      "name": "Александр",
+      "surname": "Цалапов",
+      "patronymic": "Михайлович",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1998-10-21T13:28:06.419Z",
+      "group": "191-322",
+      "course": 2,
+      "edit": false
+    },
+    {
+      "id": 3,
+      "name": "Александр",
+      "surname": "Цалапов",
+      "patronymic": "Михайлович",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1998-10-21T13:28:06.419Z",
+      "group": "191-322",
+      "course": 3,
+      "edit": false
+    },
+    {
+      "id": 4,
+      "name": "Александр",
+      "surname": "Цалапов",
+      "patronymic": "Михайлович",
+      "phone": "+7(800)555-3535",
+      "email": "qwerty@mail.ru",
+      "date": "1998-10-21T13:28:06.419Z",
+      "group": "191-322",
+      "course": 4,
+      "edit": false
+    },
+    {
+      "id": 5,
+      "name": "Александр",
+      "surname": "Цалапов",
+      "phone": "+7(892)-684-8958",
+      "email": "ss@ss",
+      "date": "2021-01-06T00:00:00.000Z",
+      "group": "191-322",
+      "course": 1,
+      "edit": false
+    },
+    {
+      "id": 6,
+      "name": "Айрат",
+      "surname": "Аширов",
+      "phone": "+7(132)-415-3114",
+      "email": "33@ss",
+      "date": "1999-09-25T00:00:00.000Z",
+      "course": 1,
+      "group": "181-322",
+      "edit": false,
+      "patronymic": "Михайлович"
+    },
+    {
+      "id": 7,
+      "name": "Иван",
+      "surname": "Веденов",
+      "phone": "+7(154)-354-3543",
+      "email": "33@eda",
+      "date": "1990-06-25T00:00:00.000Z",
+      "course": 1,
+      "group": "184-352",
+      "edit": false,
+      "patronymic": "Иванов"
+    },
+    {
+      "id": 8,
+      "name": "Сунгур",
+      "surname": "Гасанов",
+      "patronymic": "Юсупович",
+      "phone": "+7(756)-735-2355",
+      "email": "sun@gur",
+      "date": "1991-02-25T00:00:00.000Z",
+      "course": 1,
+      "group": "205-52",
+      "edit": false
+    },
+    {
+      "id": 9,
+      "name": "Ашир",
+      "surname": "Айратов",
+      "patronymic": "Ильдарович",
+      "phone": "+7(765)-765-7657",
+      "email": "ashir@off",
+      "date": "1991-06-25T00:00:00.000Z",
+      "course": 3,
+      "group": "203-45",
+      "edit": false
+    }
+  ]
 }
