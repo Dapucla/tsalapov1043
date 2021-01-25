@@ -97,18 +97,6 @@
       "edit": false
     },
     {
-      "id": 10,
-      "name": "Александр",
-      "surname": "Цалапов",
-      "patronymic": "НеМихайлович",
-      "phone": "+7(849)-284-9389",
-      "email": "ny@yart",
-      "date": "1997-05-25T00:00:00.000Z",
-      "course": 4,
-      "group": "191-525",
-      "edit": false
-    },
-    {
       "id": 11,
       "name": "Александр",
       "surname": "Цалапов",
@@ -130,6 +118,18 @@
       "date": "2000-04-12T00:00:00.000Z",
       "course": 2,
       "group": "181-321",
+      "edit": false
+    },
+    {
+      "id": 13,
+      "name": "Александр",
+      "surname": "Цалапов",
+      "patronymic": "",
+      "phone": "+7(892)-684-8958",
+      "email": "marderics@gmail.com",
+      "date": "1998-06-25T00:00:00.000Z",
+      "course": 4,
+      "group": "171-344",
       "edit": false
     }
   ]
