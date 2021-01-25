@@ -1,1 +1,28 @@
-<p>course works!</p>
+<ng-container>
+    <h1 *ngIf="course == 1">Веб-разработка</h1>
+    <h1 *ngIf="course == 2">САПР</h1>
+    <h1 *ngIf="course == 3">Машиностроение</h1>
+    <h1 *ngIf="course == 4">Дизайн интерфейсов</h1>
+    <div class="col-4">
+        <span>Сортировать по:</span>
+        <form [formGroup]='sortForm'>
+            <select formControlName='sortType' class='custom-select' (click)="currentInstrument()">
+              <option [ngValue]='"higherId"'>возрастанию id</option>
+              <option [ngValue]='"lowerId"'>убыванию id</option>
+              <option [ngValue]='"higherAge"'>возрастанию возраста</option>
+              <option [ngValue]='"lowerAge"'>убыванию возраста</option>
+            </select>
+        </form>
+    </div>
+    <div *ngIf="!instruments">
+        <div class="col-12 mt-4">
+            <span>Фильтр по имени или фамилии</span>
+        </div>
+        <div class="col-4">
+            <input type="text" class='form-control' placeholder="Имя Фамилия" [(ngModel)]='searchSrt'>
+        </div>
+    </div>
+    <table class='table table-responsive-lg mt-4 bg-secondary'>
+
+    </table>
+</ng-container>

@@ -1,0 +1,47 @@
+{
+    "workers": [{
+            "id": 1,
+            "name": "Александр",
+            "surname": "Цалапов",
+            "patronymic": "Михайлович",
+            "phone": "+7(800)555-3535",
+            "email": "qwerty@mail.ru",
+            "date": "1998-10-21T13:28:06.419Z",
+            "group": 1,
+            "edit": false
+        },
+        {
+            "id": 2,
+            "name": "Александр",
+            "surname": "Цалапов",
+            "patronymic": "Михайлович",
+            "phone": "+7(800)555-3535",
+            "email": "qwerty@mail.ru",
+            "date": "1998-10-21T13:28:06.419Z",
+            "group": 2,
+            "edit": false
+        },
+        {
+            "id": 3,
+            "name": "Александр",
+            "surname": "Цалапов",
+            "patronymic": "Михайлович",
+            "phone": "+7(800)555-3535",
+            "email": "qwerty@mail.ru",
+            "date": "1998-10-21T13:28:06.419Z",
+            "group": 3,
+            "edit": false
+        },
+        {
+            "id": 4,
+            "name": "Александр",
+            "surname": "Цалапов",
+            "patronymic": "Михайлович",
+            "phone": "+7(800)555-3535",
+            "email": "qwerty@mail.ru",
+            "date": "1998-10-21T13:28:06.419Z",
+            "group": 4,
+            "edit": false
+        }
+    ]
+}
