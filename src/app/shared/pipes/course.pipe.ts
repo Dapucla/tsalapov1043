@@ -5,8 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 export class CoursePipe implements PipeTransform {
 
-  transform(value: unknown, ...args: unknown[]): unknown {
-    return null;
+  transform(students: {course: number}[], course: number): any[] {
+    return students.filter(student=>student.course==course);
   }
 
 }
