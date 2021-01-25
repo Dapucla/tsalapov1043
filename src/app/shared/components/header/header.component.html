@@ -1,21 +1,21 @@
 <div class="mb-3">
-    <nav class="navbar navbar-dark mb-4 navbar-expand-sm navbar-light bg-secondary">
-        <a class="navbar-brand" href="#">tsalapov1043</a>
-        <ul class="navbar-nav">
+    <nav class="navbar navbar-dark mb-4 navbar-expand-lg navbar-light bg-secondary">
+        <a class="navbar-brand border-right pr-3" routerLink="/">tsalapov1043</a>
+        <ul class="navbar-nav mr-auto">
             <li class="nav-item">
-                <a class="text-white nav-link" routerLink="/">Информация</a>
+                <a class="text-white nav-link" [routerLink]='"/"' routerLinkActive='text-blue' [routerLinkActiveOptions]='{exact: true}'>Информация</a>
             </li>
             <li class="nav-item">
-                <a class="text-white nav-link" routerLink="/course/1">Веб-разработка</a>
+                <a class="text-white nav-link" routerLink="/course/1" routerLinkActive='text-blue' [routerLinkActiveOptions]='{exact: true}'>Веб-разработка</a>
             </li>
             <li class="nav-item">
-                <a class="text-white nav-link" routerLink="/course/2">САПР</a>
+                <a class="text-white nav-link" routerLink="/course/2" routerLinkActive='text-blue' [routerLinkActiveOptions]='{exact: true}'>САПР</a>
             </li>
             <li class="nav-item">
-                <a class="text-white nav-link" routerLink="/course/3">Машиностроение</a>
+                <a class="text-white nav-link" routerLink="/course/3" routerLinkActive='text-blue' [routerLinkActiveOptions]='{exact: true}'>Машиностроение</a>
             </li>
             <li class="nav-item">
-                <a class="text-white nav-link" routerLink="/course/4">Дизайн интерфейсов</a>
+                <a class="text-white nav-link" routerLink="/course/4" routerLinkActive='text-blue' [routerLinkActiveOptions]='{exact: true}'>Дизайн интерфейсов</a>
             </li>
         </ul>
     </nav>
